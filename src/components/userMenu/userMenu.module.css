@@ -1,0 +1,27 @@
+.userMenu {
+  display: flex;
+  color: rgb(9, 136, 239);
+}
+.userWelcome {
+  display: flex;
+  align-items: center;
+}
+.userName {
+  margin-left: 5px;
+  font-weight: bold;
+  color: rgb(19, 173, 19);
+}
+.userBtn {
+  margin-left: 20px;
+  color: rgb(9, 136, 239);
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 0;
+  box-shadow: 0 0 7px rgb(10, 96, 209);
+}
+.userBtn:hover {
+  font-weight: 500;
+  color: rgb(19, 173, 19);
+  background-color: #fff;
+  box-shadow: 0 0 7px rgb(46, 190, 113);
+}

@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  height: 40px;
+  margin-bottom: 2px;
+  box-shadow: 0 0 4px rgb(0, 104, 156);
+  align-items: center;
+  background-color: rgba(191, 233, 255, 0.409);
+}
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.link {
+  color: rgb(9, 136, 239);
+  font-weight: bold;
+  text-decoration: none;
+}
+.link:hover {
+  color: rgb(19, 173, 19);
+}
+.link:not(:last-child) {
+  margin-right: 10px;
+}
+.activeLink {
+  color: rgb(19, 173, 19);
+}

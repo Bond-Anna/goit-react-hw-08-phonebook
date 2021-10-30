@@ -12,8 +12,8 @@
   width: 5px;
   height: 5px;
   margin-right: 5px;
-  background-color: rgb(151, 176, 209);
-  border: 1px solid rgb(151, 176, 209);
+  background-color: rgb(110, 207, 110);
+  border: 1px solid rgb(70, 192, 70);
   border-radius: 50%;
 }
 .contactName {
@@ -39,5 +39,6 @@
 .contactBtn:hover,
 .contactBtn:active {
   font-weight: 600;
-  background-color: rgba(198, 220, 233, 0.882);
+  color: rgb(19, 173, 19);
+  background-color: rgba(191, 233, 255, 0.409);
 }
