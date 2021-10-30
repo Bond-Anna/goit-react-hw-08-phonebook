@@ -25,7 +25,31 @@ const loading = createReducer(false, {
   [fetchContactsRequest]: () => true,
   [fetchContactsSucces]: () => false,
   [fetchContactsError]: () => false,
+  [addContactRequest]: () => false,
+  [addContactSuccess]: () => false,
+  [addContactError]: () => false,
+  [deleteContactRequest]: () => false,
+  [deleteContactSuccess]: () => false,
+  [deleteContactError]: () => false,
+});
+
+const adding = createReducer(false, {
+  [fetchContactsRequest]: () => false,
+  [fetchContactsSucces]: () => false,
+  [fetchContactsError]: () => false,
   [addContactRequest]: () => true,
+  [addContactSuccess]: () => false,
+  [addContactError]: () => false,
+  [deleteContactRequest]: () => false,
+  [deleteContactSuccess]: () => false,
+  [deleteContactError]: () => false,
+});
+
+const deleting = createReducer(false, {
+  [fetchContactsRequest]: () => false,
+  [fetchContactsSucces]: () => false,
+  [fetchContactsError]: () => false,
+  [addContactRequest]: () => false,
   [addContactSuccess]: () => false,
   [addContactError]: () => false,
   [deleteContactRequest]: () => true,
@@ -39,4 +63,11 @@ const filter = createReducer("", {
 
 const error = createReducer(null, {});
 
-export default combineReducers({ items, loading, filter, error });
+export default combineReducers({
+  items,
+  loading,
+  adding,
+  deleting,
+  filter,
+  error,
+});

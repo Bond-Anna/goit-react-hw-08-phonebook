@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import {
   getContacts,
-  getIsLoading,
+  getIsAdding,
 } from "../../redux/contacts/contacts-selectors";
 import contactsOperations from "../../redux/contacts/contacts-operations";
 import { Spinner } from "../spiner";
@@ -15,7 +15,7 @@ export default function Form() {
   const state = { name, number };
 
   const contacts = useSelector(getContacts);
-  const isLoading = useSelector(getIsLoading);
+  const isAdding = useSelector(getIsAdding);
 
   const dispatch = useDispatch();
 
@@ -79,8 +79,8 @@ export default function Form() {
             className={css.input}
           />
         </label>
-        <button type="submit" className={css.formBtn} disabled={isLoading}>
-          Add contact{isLoading && <Spinner size={17} />}
+        <button type="submit" className={css.formBtn} disabled={isAdding}>
+          Add contact{isAdding && <Spinner size={17} />}
         </button>
       </form>
     </>

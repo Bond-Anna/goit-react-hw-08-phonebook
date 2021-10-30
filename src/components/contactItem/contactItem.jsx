@@ -1,12 +1,14 @@
-import { useDispatch, useSelector } from "react-redux";
+import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
 import contactsOperations from "../../redux/contacts/contacts-operations";
-import { getIsLoading } from "../../redux/contacts/contacts-selectors";
 import css from "./contactItem.module.css";
 
 export default function ContactItem({ id, name, number }) {
-  const isDeleting = useSelector(getIsLoading);
   const dispatch = useDispatch();
-
+  const onDelete = () => {
+    dispatch(contactsOperations.deleteContact(id));
+    toast.success(`Contact '${name} deleted'`);
+  };
   return (
     <>
       <li key={id} className={css.contactItem}>
@@ -15,12 +17,8 @@ export default function ContactItem({ id, name, number }) {
           <span className={css.contactName}>{name}:</span>
           <span className={css.contactNumber}>{number}</span>
         </div>
-        <button
-          type="button"
-          onClick={() => dispatch(contactsOperations.deleteContact(id))}
-          className={css.contactBtn}
-        >
-          {isDeleting ? "Deleting..." : "Delete"}
+        <button type="button" onClick={onDelete} className={css.contactBtn}>
+          Delete
         </button>
       </li>
     </>

@@ -11,3 +11,5 @@ export const filtredContacts = (state) => {
   );
 };
 export const getIsLoading = (state) => state.contacts.loading;
+export const getIsAdding = (state) => state.contacts.adding;
+export const getIsDeleting = (state) => state.contacts.deleting;

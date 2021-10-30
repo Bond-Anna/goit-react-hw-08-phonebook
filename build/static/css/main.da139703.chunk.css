@@ -1,3 +1,58 @@
+.userMenu_userMenu__10OZa {
+  display: flex;
+  color: #0988ef;
+}
+.userMenu_userWelcome__3oV76 {
+  display: flex;
+  align-items: center;
+}
+.userMenu_userName__3ObF6 {
+  margin-left: 5px;
+  font-weight: 700;
+  color: #13ad13;
+}
+.userMenu_userBtn__2v4Pp {
+  margin-left: 20px;
+  color: #0988ef;
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 0;
+  box-shadow: 0 0 7px #0a60d1;
+}
+.userMenu_userBtn__2v4Pp:hover {
+  font-weight: 500;
+  color: #13ad13;
+  background-color: #fff;
+  box-shadow: 0 0 7px #2ebe71;
+}
+.Navigation_navigation__3XPoX {
+  display: flex;
+  height: 40px;
+  margin-bottom: 2px;
+  box-shadow: 0 0 4px #00689c;
+  align-items: center;
+  background-color: rgba(191, 233, 255, 0.409);
+}
+.Navigation_container__3Ssg0 {
+  display: flex;
+  width: 100%;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.Navigation_link__1LLZS {
+  color: #0988ef;
+  font-weight: 700;
+  text-decoration: none;
+}
+.Navigation_link__1LLZS:hover {
+  color: #13ad13;
+}
+.Navigation_link__1LLZS:not(:last-child) {
+  margin-right: 10px;
+}
+.Navigation_activeLink__2IYFt {
+  color: #13ad13;
+}
 .form_form__1Ljzh {
   display: flex;
   flex-direction: column;
@@ -42,7 +97,11 @@
 .form_formBtn__bGnBn:active,
 .form_formBtn__bGnBn:not([disabled]):hover {
   font-weight: 600;
-  background-color: rgba(198, 220, 233, 0.882);
+  color: #13ad13;
+  background-color: rgba(191, 233, 255, 0.409);
+}
+.form_container__1Vx9T {
+  margin-top: 31px;
 }
 .filter_filterLabel__1GXeY {
   display: flex;
@@ -50,7 +109,7 @@
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 15px;
-  color: #7a93b4;
+  color: #46c046;
 }
 .filter_filterInput__3up4A {
   margin-left: 15px;
@@ -71,8 +130,8 @@
   width: 5px;
   height: 5px;
   margin-right: 5px;
-  background-color: #97b0d1;
-  border: 1px solid #97b0d1;
+  background-color: #6ecf6e;
+  border: 1px solid #46c046;
   border-radius: 50%;
 }
 .contactItem_contactName__1r_4U {
@@ -98,11 +157,16 @@
 .contactItem_contactBtn__2niSk:active,
 .contactItem_contactBtn__2niSk:hover {
   font-weight: 600;
-  background-color: rgba(198, 220, 233, 0.882);
+  color: #13ad13;
+  background-color: rgba(191, 233, 255, 0.409);
 }
 .contacts_contactsList__3oLdY {
   width: 400px;
   padding: 0;
+  margin: auto;
+}
+.Phonebook_phonebook__3Qzrx {
+  width: 600px;
   margin: auto;
 }
 body {
@@ -117,14 +181,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.App {
-  display: block;
-  width: 500px;
-  margin: auto;
-}
 .title {
   padding: 0;
   margin: 30px 0;
-  color: #587192;
+  color: #0988ef;
 }
-/*# sourceMappingURL=main.c1f78193.chunk.css.map */
+/*# sourceMappingURL=main.da139703.chunk.css.map */

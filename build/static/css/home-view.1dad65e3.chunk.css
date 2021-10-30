@@ -1,0 +1,68 @@
+.HomeView_home__2iMFy {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  display: block;
+  height: 500px;
+  background: 50% / cover no-repeat
+    url(/static/media/mobile-phone-gb756a2515_1280.56a260d2.png);
+  box-shadow: 0 0 40px #08499e;
+  -webkit-clip-path: inset(0 -45px -45px -45px);
+  clip-path: inset(0 -45px -45px -45px);
+}
+.HomeView_title__2K0nF {
+  font-size: 55px;
+  font-weight: 900;
+  margin: 0;
+  padding: 20px 0 0 12px;
+  color: #fff;
+}
+.HomeView_registredTitle__hMuT3 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 800;
+  bottom: 27px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+}
+.HomeView_name__PAr-E {
+  text-shadow: 3px 2px 0 #13ad13, 4px 4px 0 #d7d7d7;
+  color: #fff;
+}
+.HomeView_link__2Lahy {
+  width: 142px;
+  font-weight: 700;
+  font-size: 32px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid #13ad13;
+  color: #13ad13;
+  box-shadow: inset 0 0 5px 1px rgba(19, 173, 19, 0.2);
+}
+.HomeView_link__2Lahy:hover {
+  background-color: #13ad13;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.HomeView_link__2Lahy:not(:last-child) {
+  margin-right: 10px;
+}
+.HomeView_activeLink__1FLAz {
+  color: #13ad13;
+}
+.HomeView_registerLink__2CkiC {
+  position: absolute;
+  bottom: 100px;
+  left: 35px;
+}
+.HomeView_loginLink__c8873 {
+  position: absolute;
+  bottom: 100px;
+  right: 35px;
+}
+/*# sourceMappingURL=home-view.1dad65e3.chunk.css.map */
