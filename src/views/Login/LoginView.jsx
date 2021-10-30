@@ -1,17 +1,8 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import authOperations from "../../redux/auth/auth-operations";
+import css from "../../components/form/form.module.css";
 
-const styles = {
-  form: {
-    width: 320,
-  },
-  label: {
-    display: "flex",
-    flexDirection: "column",
-    marginBottom: 15,
-  },
-};
 export function Login() {
   const [email, setEmail] = useState("");
   const [password, setPasssword] = useState("");
@@ -40,27 +31,33 @@ export function Login() {
   };
 
   return (
-    <form style={styles.form} onSubmit={handleSubmit}>
-      <label style={styles.label}>
-        Email
-        <input
-          type="email"
-          name="email"
-          value={email}
-          onChange={handleChange}
-        />
-      </label>
-      <label style={styles.label}>
-        <span>Password</span>
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handleChange}
-        />
-      </label>
-      <button type="submit">Log In</button>
-    </form>
+    <div className={css.container}>
+      <form className={css.form} onSubmit={handleSubmit}>
+        <label className={css.labelField}>
+          <span className={css.label}>Email</span>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleChange}
+            className={css.input}
+          />
+        </label>
+        <label className={css.labelField}>
+          <span className={css.label}>Password</span>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+            className={css.input}
+          />
+        </label>
+        <button type="submit" className={css.formBtn}>
+          Log In
+        </button>
+      </form>
+    </div>
   );
 }
 

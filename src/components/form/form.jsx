@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import {
   getContacts,
   getIsLoading,
@@ -37,7 +37,7 @@ export default function Form() {
     if (
       contacts.find((cont) => cont.name.toLowerCase() === name.toLowerCase())
     ) {
-      return window.alert(`Name '${name}' is already in contacts`);
+      return toast.error(`Name '${name}' is already in contacts`);
     }
     dispatch(contactsOperations.addContact(state));
 
@@ -83,7 +83,6 @@ export default function Form() {
           Add contact{isLoading && <Spinner size={17} />}
         </button>
       </form>
-      <Toaster position="bottom-right" reverseOrder={false} />
     </>
   );
 }
