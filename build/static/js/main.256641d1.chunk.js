@@ -510,7 +510,7 @@
       var ye = n(49),
         we = n.n(ye);
       function ze() {
-        var e = d.b,
+        var e = Object(d.b)(),
           t = Object(d.c)(oe);
         return Object(ee.jsxs)("label", {
           className: we.a.filterLabel,
@@ -521,7 +521,7 @@
               name: "name",
               value: t,
               onChange: function (t) {
-                return e(R(t.currentTarget.value));
+                e(R(t.currentTarget.value));
               },
               className: we.a.filterInput,
             }),
@@ -980,4 +980,4 @@
   },
   [[106, 4, 5]],
 ]);
-//# sourceMappingURL=main.63e48285.chunk.js.map
+//# sourceMappingURL=main.256641d1.chunk.js.map
